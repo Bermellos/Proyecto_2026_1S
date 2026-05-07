@@ -1,3 +1,5 @@
+package ucu.edu.aed.app;
+
 public class Vehiculo 
 {
     public String id; 

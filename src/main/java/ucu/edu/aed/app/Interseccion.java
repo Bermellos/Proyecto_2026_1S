@@ -1,3 +1,5 @@
+package ucu.edu.aed.app;
+
 public class Interseccion 
 {
     public Calle calle1; 
@@ -14,7 +16,7 @@ public class Interseccion
         if (calle1.semaforo.toLowerCase().equals("verde"))
         {
             calle2.semaforo = "rojo";
-            calle1.semaforo = "amarillo";  // cambio el semaforo de la calle 1 
+            calle1.semaforo = "amarillo";
         }
 
         else if (calle1.semaforo.toLowerCase().equals("amarillo"))

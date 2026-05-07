@@ -1,4 +1,5 @@
-import java.util.LinkedList;
+package ucu.edu.aed.app;
+
 import java.util.Scanner; 
 
 public class Main 
@@ -60,16 +61,18 @@ public class Main
 
                 if (seleccionCalle == 1)
                 {
-                    for (Vehiculo v: calle1.cola)
+                    for (int i = 0; i < calle1.cola.tamaño(); i++)
                     {
+                      Vehiculo v = calle1.cola.obtener(i);
                       System.out.println(v.id + " - " + v.tipo + " - " + v.tiempoLlegada);
                     }
                 }
 
                 else if (seleccionCalle == 2)
                 {
-                    for (Vehiculo v: calle2.cola)
+                    for (int i = 0; i < calle2.cola.tamaño(); i++)
                     {
+                      Vehiculo v = calle2.cola.obtener(i);
                       System.out.println(v.id + " - " + v.tipo + " - " + v.tiempoLlegada);
                     }
                 }
@@ -83,12 +86,18 @@ public class Main
 
                 if (seleccionCalle == 1)
                 {
-                    calle1.cola.poll();
+                    if (!calle1.cola.esVacio())
+                    {
+                        calle1.cola.quitaDeCola();
+                    }
                 }
 
                 else if (seleccionCalle == 2)
                 {
-                    calle2.cola.poll();
+                    if (!calle2.cola.esVacio())
+                    {
+                        calle2.cola.quitaDeCola();
+                    }
                 }
             }
 

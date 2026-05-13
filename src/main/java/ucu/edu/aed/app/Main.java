@@ -19,6 +19,7 @@ public class Main
         while (opcion != 0)
         {
             System.out.println("\n--- GESTIÓN DE VEHÍCULOS ---");
+            System.out.println("estado semaforos: " + calle1.nombre + " - " + calle1.semaforo + " | " + calle2.nombre + " - " + calle2.semaforo);
             System.out.println("1. Agregar vehículo al final de la cola (el último en llegar)");
             System.out.println("2. Listar Vehículos");
             System.out.println("3. Elimina el próximo vehículo en cruzar (el que llegó primero)");

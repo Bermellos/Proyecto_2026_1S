@@ -1,6 +1,6 @@
 package ucu.edu.aed.app;
 
-import ucu.edu.aed.tda.ColaEnlazada;
+import ucu.edu.aed.tda.ColaCircular;
 import ucu.edu.aed.tda.TDACola;
 
 public class Calle 
@@ -13,7 +13,7 @@ public class Calle
     {
         this.nombre = nombre; 
         this.semaforo = semaforo; 
-        this.cola = new ColaEnlazada<>();
+        this.cola = new ColaCircular<>();
     }
 
     public void incorporarVehiculo(Vehiculo vehiculo)
